@@ -1,8 +1,17 @@
 ages = [24, 30, 18, 20, 41]
-total = 0
 
+sum = 0
 ages.each do |age|
-  total += age
+  sum += age
 end
 
-p total
+p sum
+
+number = 0
+ages.each do |age|
+  number +=1
+end
+
+p number
+
+p mean = sum.to_f/number
