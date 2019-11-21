@@ -1,5 +1,8 @@
 ages = [24, 30, 18, 20, 41]
+total = 0
 
-# Your code here for calculating the standard deviation
+ages.each do |age|
+  total += age
+end
 
-# When you find the standard deviation, print it out
+p total
