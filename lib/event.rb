@@ -3,18 +3,12 @@ class Event
 
   def initialize(name, ages)
     @name = name
-    @ages = []
+    @ages = ages
   end
 
   def max_age
-    max = 0
-    ages.each do |age|
-      if age > max
-        max = age
-      end
-    end
-
-    p max
+    max = ages.max
+    puts max
   end
 require "pry"; pry.binding
   def min_age
