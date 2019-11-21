@@ -10,13 +10,28 @@ class Event
     max = ages.max
     puts max
   end
-require "pry"; pry.binding
+
   def min_age
+    min = ages.min
+    puts min
   end
 
   def average_age
+    sum = 0
+    ages.each do |age|
+      sum += age
+    end
+
+    number = 0
+    ages.each do |age|
+      number +=1
+    end
+
+    p mean = sum/number.to_f.round(2)
   end
 
   def standard_deviation_age
+    
   end
+require "pry"; pry.binding
 end
